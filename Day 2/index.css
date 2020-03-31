@@ -1,0 +1,179 @@
+html{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: arial;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: grey;
+}
+
+button{
+	cursor: pointer;
+}
+
+/* Barre de navigation */
+nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px 30px;
+	font-size: 14px;
+}
+
+nav > a {
+	margin-left: 20px;
+}
+
+nav button{
+	background-color: #4285f4;
+	border: none;
+	color: #fff;
+	padding: 0px 12px;
+	height: 30px;
+	border-radius: 2px;
+}
+
+/* Barre de recherche */
+main{
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 140px;
+}
+
+main .logo img{
+	height: 92px;
+	width: 272px;
+}
+
+
+main > .recherche{
+	height: 46px;
+	border: 1px solid #dfe1e5;
+	border-radius: 23px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 600px;
+	margin: 30px 0;
+}
+
+main .recherche:hover{
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+main input{
+	display: flex;
+	flex-grow: 1;
+	border: none;
+	font-size: 18px;
+}
+
+main input:focus{
+	outline: none;
+}
+
+main i,
+main .recherche img{
+	padding: 0 22px;
+	height: 24px;
+	width: 24px;
+}
+
+main i{
+	color: #9aa0a6;
+}
+
+main .boutons button{
+	background-color: #f2f2f2;
+	border: none;
+	color: #222;
+	padding: 6px 24px;
+	height: 30px;
+	border-radius: 2px;
+	border: 1px solid transparent;
+}
+
+main .boutons button:hover{
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+main .boutons button:not(:first-child){
+	margin-left: 10px;
+}
+
+main .covid19{
+	display: flex;
+	align-items: center;
+	margin: 30px;
+	color: #1a0dab;
+}
+main .covid19 a:hover{
+	color: none;
+}
+
+main .covid19 a:visited{
+	color:#609;
+}
+
+main .covid19 img{
+	height: 45px;
+	width: 45px;
+	margin-right: 5px;
+}
+
+/* Bas de la page, nouvelle fonctionalite */
+
+footer{
+	background-color: #f2f2f2;
+	color: #9aa0a6;
+	position:fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	font-size: 14px;
+}
+
+footer > div{
+	border-top: 1px solid #e4e4e4;
+	padding: 8px 16px;
+}
+
+footer .ligne2{
+	display: flex;
+	flex-direction:row-reverse;
+	justify-content: space-between;
+	color: rgb(34, 34, 34);
+}
+
+footer .ligne2 a:not(:first-child){
+	padding-left: 27px;
+}
+
+/* Responsive Design Footer */
+@media screen and (max-width:1200px){
+	footer .ligne2{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	footer .ligne2 div:not(:first-child){
+		margin-bottom: 5px;
+	}
+}
